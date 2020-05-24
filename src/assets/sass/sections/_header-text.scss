@@ -1,0 +1,83 @@
+.header__text{
+
+    &-row{
+        text-align: center;
+        color: #fff;
+        padding-top: 155px;
+        padding-bottom: 70px;
+    }
+
+    &-item{
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    &-title{
+        font-size: 32px;
+        @include playfair-black;
+
+        &:after{
+            content: "";
+            display: block;
+            width: 50px;
+            height: 1px;
+            background-color: #00e0d0;
+            margin: 21px auto 30px;
+        }
+    }
+
+    &-desc{
+        font-size: 14px;
+        line-height: 24px;
+        @include roboto-light;
+        margin-bottom: 50px;
+        letter-spacing: 1px;
+    }
+
+    &-btn{
+        background-color:transparent;
+        color: #00e0d0;
+        border: 1px solid #00e0d0;
+        outline: none;
+        cursor: pointer;
+        border-radius: 3px;
+        padding: 12px 15px;
+        transition: .2s;
+        @include hammer-regular;
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-bottom: 125px;
+
+        &:hover{
+            // background-color: #00e0d0;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+    }
+}
+
+.owl-theme .owl-dots .owl-dot{
+    outline: none;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    background: transparent;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #bab9bc;
+    margin: 0;
+    margin-right: 5px;
+}
+
+
+.owl-theme .owl-dots .owl-dot.active span{
+    background-color: #00e0d0;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span{
+    background-color: #fff;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots{
+    margin: 0;
+}
