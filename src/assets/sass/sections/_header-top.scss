@@ -1,0 +1,26 @@
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.menu {
+    &__list {
+        display: flex;
+        @include roboto-black;
+        font-size: 13px;
+
+        &-item {
+            margin-left: 20px;
+        }
+    }
+
+    &__link {
+        transition: .2s ease;
+
+        &:hover {
+            color: #00e0d0;
+        }
+    }
+}
