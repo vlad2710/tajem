@@ -1,0 +1,39 @@
+.story {
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    &__block{
+        max-width: 530px;
+
+        &-title{
+            font-size: 22px;
+            @include playfair-bold;
+            color: #413d4b;
+            margin-bottom: 28px;
+        }
+
+        &-text{
+            font-size: 14px;
+            color: #413d4b;
+            line-height: 22px;
+            @include roboto-light;
+            letter-spacing: 0.3px;
+            opacity: .75;
+            margin-bottom: 33px;
+        }
+
+        &-first{
+            margin-bottom: 15px;
+        }
+
+        &-btn:hover{
+            border-color: #00e0d0;
+            background-color: #00e0d0;
+        }
+    }
+}

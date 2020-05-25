@@ -26,6 +26,10 @@ li {
     list-style-type: none;
 }
 
+p {
+    margin: 0;
+}
+
 button {
     padding: 0;
 }
@@ -34,6 +38,28 @@ button {
     max-width: 970px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.btn {
+    background-color: transparent;
+    color: #00e0d0;
+    border: 1px solid #00e0d0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 12px 15px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    border: 1px solid #fff;
+    color: #fff;
 }
 
 header {
@@ -117,28 +143,6 @@ header {
     letter-spacing: 1px;
 }
 
-.header__text-btn {
-    background-color: transparent;
-    color: #00e0d0;
-    border: 1px solid #00e0d0;
-    outline: none;
-    cursor: pointer;
-    border-radius: 3px;
-    padding: 12px 15px;
-    -webkit-transition: .2s;
-    -o-transition: .2s;
-    transition: .2s;
-    font-family: 'Hammersmith One', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-
-.header__text-btn:hover {
-    border: 1px solid #fff;
-    color: #fff;
-}
-
 .owl-theme .owl-dots .owl-dot {
     outline: none;
 }
@@ -164,7 +168,49 @@ header {
     margin: 0;
     position: absolute;
     bottom: 70px;
-    text-align: center;
     right: 0;
     left: 0;
+}
+
+.story__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.story__block {
+    max-width: 530px;
+}
+
+.story__block-title {
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #413d4b;
+    margin-bottom: 28px;
+}
+
+.story__block-text {
+    font-size: 14px;
+    color: #413d4b;
+    line-height: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    opacity: .75;
+    margin-bottom: 33px;
+}
+
+.story__block-first {
+    margin-bottom: 15px;
+}
+
+.story__block-btn:hover {
+    border-color: #00e0d0;
+    background-color: #00e0d0;
 }

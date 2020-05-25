@@ -34,25 +34,6 @@
         margin-bottom: 50px;
         letter-spacing: 1px;
     }
-
-    &-btn{
-        background-color:transparent;
-        color: #00e0d0;
-        border: 1px solid #00e0d0;
-        outline: none;
-        cursor: pointer;
-        border-radius: 3px;
-        padding: 12px 15px;
-        transition: .2s;
-        @include hammer-regular;
-        font-size: 16px;
-        letter-spacing: 1px;
-
-        &:hover{
-            border: 1px solid #fff;
-            color: #fff;
-        }
-    }
 }
 
 .owl-theme .owl-dots .owl-dot{
@@ -81,7 +62,6 @@
     margin: 0;
     position: absolute;
     bottom: 70px;
-    text-align: center;
     right: 0;
     left: 0;
 }
