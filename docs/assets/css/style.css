@@ -442,3 +442,73 @@ header {
     font-weight: 300;
     margin-bottom: 26px;
 }
+
+.works__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+
+.works__title {
+    font-size: 22px;
+    letter-spacing: .5px;
+    color: #413d4b;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.works__link {
+    font-size: 14px;
+    opacity: .5;
+    color: #413d4b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.works__link:after {
+    content: url(../img/works-bracket.png);
+    width: 8px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.works__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.works__row-item {
+    width: 16.66667%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.works__row-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.works__bottom {
+    text-align: center;
+    padding: 70px 0;
+}
+
+.works__bottom-btn:hover {
+    border-color: #00e0d0;
+    background-color: #00e0d0;
+}
