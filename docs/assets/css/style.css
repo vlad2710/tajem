@@ -143,11 +143,11 @@ header {
     letter-spacing: 1px;
 }
 
-.owl-theme .owl-dots .owl-dot {
+.header__text .owl-theme .owl-dots .owl-dot {
     outline: none;
 }
 
-.owl-theme .owl-dots .owl-dot span {
+.header__text .owl-theme .owl-dots .owl-dot span {
     background: transparent;
     width: 10px;
     height: 10px;
@@ -156,15 +156,15 @@ header {
     margin-right: 5px;
 }
 
-.owl-theme .owl-dots .owl-dot.active span {
+.header__text .owl-theme .owl-dots .owl-dot.active span {
     background-color: #00e0d0;
 }
 
-.owl-theme .owl-dots .owl-dot:hover span {
+.header__text .owl-theme .owl-dots .owl-dot:hover span {
     background-color: #fff;
 }
 
-.owl-theme .owl-nav.disabled + .owl-dots {
+.header__text .owl-theme .owl-nav.disabled + .owl-dots {
     margin: 0;
     position: absolute;
     bottom: 70px;
@@ -511,4 +511,94 @@ header {
 .works__bottom-btn:hover {
     border-color: #00e0d0;
     background-color: #00e0d0;
+}
+
+.reviews {
+    background: url(../img/reviews-bg.jpg) center/cover no-repeat;
+}
+
+.reviews__block {
+    padding: 70px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.reviews__block-item {
+    max-width: 768px;
+    margin: 0 auto 45px;
+}
+
+.reviews__block-quote {
+    font-size: 16px;
+    letter-spacing: .25px;
+    line-height: 26px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    margin-bottom: 55px;
+}
+
+.reviews__block-quote:before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 26px;
+    background: url(../img/reviews-quotes.png) center/cover no-repeat;
+    margin: 0 auto 45px;
+}
+
+.reviews__block-person {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: .5px;
+    margin-bottom: 5px;
+}
+
+.reviews__block-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 22px;
+    opacity: .7;
+}
+
+.reviews__block .owl-nav {
+    position: absolute;
+}
+
+.reviews__block .owl-nav .owl-prev {
+    position: absolute;
+    left: 290px;
+}
+
+.reviews__block .owl-nav .owl-next {
+    position: absolute;
+    right: -650px;
+}
+
+.reviews__thumbs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+
+.reviews__thumbs-item {
+    cursor: pointer;
+    margin: 0 7px;
+}
+
+.reviews__thumbs-item.active {
+    -webkit-transform: scale(1.56);
+    -ms-transform: scale(1.56);
+    transform: scale(1.56);
+}
+
+.reviews__thumbs-img {
+    border-radius: 50%;
+    width: 45px;
 }

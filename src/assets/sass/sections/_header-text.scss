@@ -34,34 +34,36 @@
         margin-bottom: 50px;
         letter-spacing: 1px;
     }
+
+    .owl-theme .owl-dots .owl-dot{
+        outline: none;
+    }
+    
+    .owl-theme .owl-dots .owl-dot span{
+        background: transparent;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #bab9bc;
+        margin: 0;
+        margin-right: 5px;
+    }
+    
+    
+    .owl-theme .owl-dots .owl-dot.active span{
+        background-color: #00e0d0;
+    }
+    
+    .owl-theme .owl-dots .owl-dot:hover span{
+        background-color: #fff;
+    }
+    
+    .owl-theme .owl-nav.disabled+.owl-dots{
+        margin: 0;
+        position: absolute;
+        bottom: 70px;
+        right: 0;
+        left: 0;
+    }
 }
 
-.owl-theme .owl-dots .owl-dot{
-    outline: none;
-}
 
-.owl-theme .owl-dots .owl-dot span{
-    background: transparent;
-    width: 10px;
-    height: 10px;
-    border: 1px solid #bab9bc;
-    margin: 0;
-    margin-right: 5px;
-}
-
-
-.owl-theme .owl-dots .owl-dot.active span{
-    background-color: #00e0d0;
-}
-
-.owl-theme .owl-dots .owl-dot:hover span{
-    background-color: #fff;
-}
-
-.owl-theme .owl-nav.disabled+.owl-dots{
-    margin: 0;
-    position: absolute;
-    bottom: 70px;
-    right: 0;
-    left: 0;
-}

@@ -1,0 +1,82 @@
+.reviews {
+    background: url(../img/reviews-bg.jpg) center / cover no-repeat;
+
+    &__block {
+        padding: 70px 0;
+        text-align: center;
+        color: #fff;
+
+        &-item {
+            max-width: 768px;
+            margin: 0 auto 45px;
+        }
+
+        &-quote {
+            font-size: 16px;
+            letter-spacing: .25px;
+            line-height: 26px;
+            @include playfair-regular;
+            margin-bottom: 55px;
+
+            &:before {
+                content: "";
+                display: block;
+                width: 32px;
+                height: 26px;
+                background: url(../img/reviews-quotes.png) center / cover no-repeat;
+                margin: 0 auto 45px;
+            }
+        }
+
+        &-person {
+            @include roboto-black;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: .5px;
+            margin-bottom: 5px;
+        }
+
+        &-text {
+            @include roboto-light;
+            font-size: 13px;
+            line-height: 22px;
+            opacity: .7;
+        }
+
+        & .owl-nav {
+            position: absolute;
+
+            & .owl-prev {
+                position: absolute;
+                left: 290px;
+            }
+
+            & .owl-next {
+                position: absolute;
+                right: -650px;
+            }
+        }
+    }
+
+    &__thumbs {
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        &-item {
+            cursor: pointer;
+            margin: 0 7px;
+
+            &.active {
+                transform: scale(1.56);
+            }
+        }
+
+        &-img {
+            border-radius: 50%;
+            width: 45px;
+        }
+    }
+
+
+}
