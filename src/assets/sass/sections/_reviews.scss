@@ -46,14 +46,34 @@
         & .owl-nav {
             position: absolute;
 
-            & .owl-prev {
+            & button.owl-prev {
                 position: absolute;
                 left: 290px;
+                background-image: url(../img/reviews-nav-back.png);
+                width: 11px;
+                height: 21px;
+                background-size: cover;
+                outline: none;
+
+                &:hover{
+                    background: none;
+                    background-image: url(../img/reviews-nav-back.png);
+                }
             }
 
-            & .owl-next {
+            & button.owl-next {
                 position: absolute;
                 right: -650px;
+                background-image: url(../img/reviews-nav-forward.png);
+                width: 11px;
+                height: 21px;
+                background-size: cover;
+                outline: none;
+
+                &:hover{
+                    background: none;
+                    background-image: url(../img/reviews-nav-forward.png);
+                }
             }
         }
     }
@@ -65,7 +85,7 @@
 
         &-item {
             cursor: pointer;
-            margin: 0 7px;
+            margin: 0 8px;
 
             &.active {
                 transform: scale(1.56);

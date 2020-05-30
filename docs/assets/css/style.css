@@ -567,14 +567,34 @@ header {
     position: absolute;
 }
 
-.reviews__block .owl-nav .owl-prev {
+.reviews__block .owl-nav button.owl-prev {
     position: absolute;
     left: 290px;
+    background-image: url(../img/reviews-nav-back.png);
+    width: 11px;
+    height: 21px;
+    background-size: cover;
+    outline: none;
 }
 
-.reviews__block .owl-nav .owl-next {
+.reviews__block .owl-nav button.owl-prev:hover {
+    background: none;
+    background-image: url(../img/reviews-nav-back.png);
+}
+
+.reviews__block .owl-nav button.owl-next {
     position: absolute;
     right: -650px;
+    background-image: url(../img/reviews-nav-forward.png);
+    width: 11px;
+    height: 21px;
+    background-size: cover;
+    outline: none;
+}
+
+.reviews__block .owl-nav button.owl-next:hover {
+    background: none;
+    background-image: url(../img/reviews-nav-forward.png);
 }
 
 .reviews__thumbs {
@@ -589,7 +609,7 @@ header {
 
 .reviews__thumbs-item {
     cursor: pointer;
-    margin: 0 7px;
+    margin: 0 8px;
 }
 
 .reviews__thumbs-item.active {

@@ -29,6 +29,7 @@ $(document).ready(function () {
         // autoplay: true,
         startPosition: 2,
         nav: true,
+        navText:["",""],
         dotsContainer: '.reviews__block-nav .reviews__thumbs',
     })
 });
