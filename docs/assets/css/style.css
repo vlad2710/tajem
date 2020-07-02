@@ -622,3 +622,116 @@ header {
     border-radius: 50%;
     width: 45px;
 }
+
+.content__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+
+.form-submit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 460px;
+    width: 100%;
+}
+
+.form-submit__title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 35px;
+    letter-spacing: 1.1px;
+    color: #413d4b;
+}
+
+.form-submit__item {
+    max-width: 460px;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #e5e5e5;
+    padding: 17px 20px;
+    margin-bottom: 23px;
+    outline: none;
+}
+
+.form-submit__item::-webkit-input-placeholder {
+    color: #a09ea5;
+}
+
+.form-submit__item::-moz-placeholder {
+    color: #a09ea5;
+}
+
+.form-submit__item:-ms-input-placeholder {
+    color: #a09ea5;
+}
+
+.form-submit__item::-ms-input-placeholder {
+    color: #a09ea5;
+}
+
+.form-submit__item::placeholder {
+    color: #a09ea5;
+}
+
+.form-submit__textarea {
+    resize: none;
+    height: 200px;
+}
+
+.form-submit__btn {
+    width: 120px;
+    height: 40px;
+}
+
+.form-submit__btn:hover {
+    border-color: #00e0d0;
+    background-color: #00e0d0;
+}
+
+.client {
+    max-width: 380px;
+    width: 100%;
+}
+
+.client__title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 47px;
+    letter-spacing: 1.1px;
+    color: #413d4b;
+}
+
+.client__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.client__item {
+    width: 160px;
+    margin-bottom: 47px;
+}
+
+.client__item img {
+    margin: 0 auto;
+}
